@@ -30,7 +30,10 @@ rock_paper_scissor= ["""
 """]
 
 num_random=random.randint(0,2)
-if num_random == user_input:
+
+if user_input >= 3 or user_input < 0:
+    print("invalid input")
+elif num_random == user_input:
     print("IT'S A DRAW")
     print(f"your choice {rock_paper_scissor[user_input]}")
     print(f"computer choice {rock_paper_scissor[num_random]}")
